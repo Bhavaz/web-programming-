@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+<div style="background-color: red">
+<h1>Best Game Ever</h1>
+</div>
+<style>
+    body {
+        background-color: #358;
+    }
+</style>
+<script>
+    var prmt = prompt("Select any one of the three rock, paper or scissors");
+    if (! prmt) {
+        document.write("<p>Please! choose one!</p>");
+    } else {
+        document.write("<p>User:" + " " + prmt + "</p>");
+    }
+    var pc = Math.random();//setting pc value to either rock, paper or scissors
+    if (pc < 0.33) {
+        pc = "paper";
+    } else if(pc <= 0.66) {
+        pc = "scissors";
+    } else {
+        pc = "rock";
+    }
+    document.write("<p>Computer:" + " " + pc + "</p>");
+    var check = function(a,b) {
+        if (a === b) {
+            return "Common man it's a tie, Lets roll again!!!";
+        }
+        if (a === "rock") {
+            if (b === "scissors") {
+                return "Rock beats scissors to death, So You win! Lets Party!";
+            } else {
+                return "Don't lose hope. Can do better! Retry.";
+            }
+        }
+        if (a === "paper") {
+            if (b === "rock") {
+                return "Paper envolopes rocks. rock can't breath and dies due to suffucation, So you Win! Lets Party!";
+            } else {
+                return "Don't lose hope. Can do better! Retry. ";
+            }
+        }
+        if (a === "scissors") {
+            if (b === "rock") {
+                return "Don't lose hope. Can do better! Retry.";
+            } else {
+                return "You win! Party Hard :)";
+            }
+        }
+    };
+    var res = check(prmt,pc);
+    document.write("<br>" + res);
+</script>
+
+</div>
+</body>
+</html>
