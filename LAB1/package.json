@@ -1,0 +1,16 @@
+{
+  "users": {
+    "user1": {
+      "username1": "timcook",
+      "password1": "apple"
+    },
+    "user2": {
+      "username2": "zukerberg",
+      "password2": "facebook"
+    },
+    "user3": {
+      "username3": "bhavaz",
+      "password3": "google"
+    }
+  }
+}
