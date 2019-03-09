@@ -23,7 +23,7 @@ export class AppComponent {
   }
 search()
 {
-  alert("hi");
+  
   this.textv=this.text.nativeElement.value;
   this.http.get('https://kgsearch.googleapis.com/v1/entities:search?query='+this.textv+'&key=AIzaSyCNxgbDr5kAFjAv3qGxdryLMrDPMfHzKOg&limit=1&indent=True')
     .subscribe((data:any)=>
