@@ -1,0 +1,48 @@
+<title>GoogleSearch</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://d3js.org/d3.v3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.1/angular.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<body class="image">
+<div class="jumbotron" align="center">
+  <h1 >Google Search</h1>
+</div>
+    <div class="col-lg-12 " align="center">
+          <input placeholder="Enter a text" type="text" class="form-control"#input/>
+          <br>
+          <button class="btn btn-lg btn-success btn-block" (click)="search()">Search</button>
+          <br>
+      <div>
+        <table align="left">
+          <tr>
+            <td><b>Name</b></td>
+            <td><b>{{name}}</b></td>
+          </tr>
+          <tr>
+            <td><b>Description</b></td>
+            <td><b>{{describe}}</b></td>
+          </tr>
+          <tr>
+            <td><b>Wikipedia Link</b></td>
+            <td><b>{{url}}</b></td>
+          </tr>
+          <tr>
+            <td><b>Url Link</b></td>
+            <td><b>{{url1}}</b></td>
+          </tr>
+          <tr>
+            <td><b>Detailed Description</b></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+<div><b>{{body}}</b></div>
+</body>
+<router-outlet></router-outlet>
+
+
